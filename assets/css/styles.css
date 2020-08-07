@@ -1,0 +1,180 @@
+/* STYLE SHEET FOR PERSONAL DASHBOARD 2 COL */
+
+/* ======================================================== */
+/* ================== 1. Global Styles ==================== */
+/* ======================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #ffffff;
+    font-family: 'Maven Pro', sans-serif;
+}
+body {
+    background-color: black !important;
+    height: 100vh;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* ========================================================= */
+/* ================= 2. Side Card Styles =================== */
+/* ========================================================= */
+.screen_time_card, 
+.favourite_reads_card {
+    background-color: #22272D;
+    border-radius: 8px;
+    padding: 0.8rem;
+    margin: 0.5rem 0rem;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.graph p {
+    margin: 0 !important;
+    margin-left: 0.3rem !important;
+    font-size: 0.8rem;
+}
+.slack,
+.tweet,
+.code {
+    width: 0.5rem;
+    border-radius: 50%;
+    height: 0.5rem;
+}
+.slack {
+    background-color: #2962F2;
+}
+.tweet {
+    background-color: #FF007C ;
+}
+.code {
+    background-color: #8F0DE7;
+}
+.card_title {
+    height: 3.5rem;
+}
+.card_title h6 {
+    font-size: 0.9rem;
+    margin-bottom: 0;
+    color: #f5f5f5;
+}
+.card_title p {
+    font-size: 0.6rem;
+    color: #f5f5f5;
+    margin: 0;
+}
+.read_cols {
+    padding: 0 1rem;
+}
+.read_row {
+    display: flex;
+    padding: 1.5rem 0;
+    border-bottom: 0.810001px solid #575757;
+    /* box-shadow: 0px 1.5px 7.50001px rgba(0, 0, 0, 0.25); */
+}
+.read_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 2rem;
+}
+.read_img {
+    height: 3.5rem;
+}
+.read_content h5 {
+    font-size: 1.1rem;
+    margin: 0;
+}
+.read_content span {
+    display: flex;
+}
+.read_content p {
+    margin: 0;
+    font-size: 0.8rem;
+}
+.read_time {
+    color: #D0D0D0;
+    font-size: 0.7rem !important;
+    margin-top: 0.2rem !important;
+}
+.ct-series-a .ct-bar {
+    stroke: #2962F2 !important;
+    /* stroke-linecap: round; */
+}
+.ct-series-b .ct-bar {
+    
+    stroke: #FF007C !important;
+    margin-top: -0.3rem;
+}
+.ct-series-c .ct-bar {
+    stroke: #8F0DE7 !important;
+}
+.ct-label {
+    fill: white !important;
+    color:#f5f5f5 !important;
+}
+.ct-grid.ct-horizontal {
+    display: none !important;
+}
+
+
+/* ========================================================= */
+/* ================= 2. Responsive views =================== */
+/* ========================================================= */
+@media screen and (max-width: 466px) {
+    .screen_time_card, 
+    .favourite_reads_card {
+        
+        padding: 0.8rem;
+        margin: 0.5rem 0rem;
+
+    }
+    .graph p {
+        margin-left: 0.2rem !important;
+        font-size: 0.6rem;
+    }
+    .slack,
+    .tweet,
+    .code {
+        width: 0.3rem;
+        height: 0.3rem;
+    }
+    .card_title {
+        height: 3rem;
+    }
+    .card_title h6 {
+        font-size: 0.7rem;
+    }
+    .card_title p {
+        font-size: 0.4rem;
+    }
+    .read_cols {
+        padding: 0 0.7rem;
+    }
+    .read_row {
+        padding: 1rem 0;
+        border-bottom: 0.810001px solid #575757;
+        /* box-shadow: 0px 1.5px 7.50001px rgba(0, 0, 0, 0.25); */
+    }
+    .read_content {
+        margin-left: 1.3rem;
+    }
+    .read_img {
+        width: 4.2rem !important;
+    }
+    .read_content h5 {
+        font-size: 0.9rem;
+    }
+    .read_content p {
+        font-size: 0.7rem;
+    }
+    .read_time {
+        font-size: 0.5rem !important;
+        margin-top: 0.1rem !important;
+    }
+
+}
+
